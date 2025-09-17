@@ -7,34 +7,37 @@ The goal is to predict the likelihood of default, assign risk scores, and visual
 ---
 
 ## 📂 Project Structure
+
+```bash
 credit_risk_project/
-│── data/ # Raw and processed data files
-│ ├── german.csv
-│ ├── X_train.csv
-│ ├── X_test.csv
-│ ├── y_train.csv
-│ ├── y_test.csv
-│ └── preprocessor.pkl
+├── data/                      # Raw and processed data files
+│   ├── german.csv
+│   ├── X_train.csv
+│   ├── X_test.csv
+│   ├── y_train.csv
+│   ├── y_test.csv
+│   └── preprocessor.pkl
 │
-│── notebooks/ # Jupyter notebooks
-│ ├── 01_eda.ipynb # Exploratory Data Analysis
-│ ├── 02_modeling.ipynb # Modeling + SHAP Explainability
-│ └── 03_risk_scoring.ipynb # Risk Scoring + Banding
+├── notebooks/                 # Jupyter notebooks
+│   ├── 01_eda.ipynb           # Exploratory Data Analysis
+│   ├── 02_modeling.ipynb      # Modeling + SHAP Explainability
+│   └── 03_risk_scoring.ipynb  # Risk Scoring + Banding
 │
-│── reports/ # Saved plots, dashboards & outputs
-│ ├── confusion_matrix.png
-│ ├── correlation_heatmap.png
-│ ├── dashboard.png
-│ ├── expected_loss_by_band.png
-│ ├── risk_band_distribution.png
-│ ├── risk_score_distribution.png
-│ ├── roc_comparison.png
-│ ├── roc_logistic.png
-│ ├── shap_local.png
-│ └── shap_summary.png
+├── reports/                   # Saved plots, dashboards & outputs
+│   ├── confusion_matrix.png
+│   ├── correlation_heatmap.png
+│   ├── dashboard.png
+│   ├── expected_loss_by_band.png
+│   ├── risk_band_distribution.png
+│   ├── risk_score_distribution.png
+│   ├── roc_comparison.png
+│   ├── roc_logistic.png
+│   ├── shap_local.png
+│   └── shap_summary.png
 │
-│── requirements.txt # Dependencies
-│── README.md # Project documentation
+├── requirements.txt           # Dependencies
+└── README.md                  # Project documentation
+```
 
 ---
 
@@ -70,7 +73,6 @@ The **interactive dashboard** highlights:
 - Expected Loss by band  
 - Filters (Age, Guarantors, Account Balance, etc.)  
 
-📌 Example Dashboard:  
 ![Dashboard](reports/dashboard.png)
 
 ---
